@@ -149,16 +149,43 @@ const users = [
 
 // ==============================
 // task_6
-// Получить массив пользователей попадающих в возрастную категорию от min до max лет (поле age).
+//Получить массив пользователей попадающих в возрастную категорию от min до max лет (поле age).
 
-const getUsersWithAge = (users, min, max) => {
-  // твой код
-  return users
-    .filter((user) => user.age > min)
-    .filter((user) => user.age < max)
-};
+// const getUsersWithAge = (users, min, max) => {
+//   // твой код
+//   return users.filter(user => user.age > min && user.age < max)
+// };
 
-console.log(getUsersWithAge(users, 20, 30)); // [объект Ross Vazquez, объект Elma Head, объект Carey Barr]
+// console.log(getUsersWithAge(users, 20, 30)); // [объект Ross Vazquez, объект Elma Head, объект Carey Barr]
 
 // console.log(getUsersWithAge(users, 30, 40));
 // [объект Moore Hensley, объект Sharlene Bush, объект Blackburn Dotson, объект Sheree Anthony]
+
+// ================================
+// task_7
+// Получить общую сумму баланса(поле balance) всех пользователей.
+
+// const calculateTotalBalance = users => {
+//   // твой код
+//   return users
+//     .reduce((totalBalance, user) => totalBalance += user.balance, 0);
+
+// };
+
+// console.log(calculateTotalBalance(users)); // 20916
+
+// ==================================
+// task_8
+// Массив имен всех пользователей у которых есть друг с указанным именем.
+
+// const getUsersWithFriend = (users, friendName) => {
+//   // твой код
+//   return users
+//     .filter((user) => user.friends.includes(friendName))
+//     .map((user) => user.name)
+// };
+
+// console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
+// console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
+
+//  
