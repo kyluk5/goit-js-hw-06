@@ -92,35 +92,47 @@ const users = [
 // ============================
 // task_1
 // Получить массив имен всех пользователей(поле name).
-const getUserNames = (users) => {
-  // твой код
-  return users.map((user) => user.name);
-};
+// const getUserNames = (users) => {
+//   // твой код
+//   return users.map((user) => user.name);
+// };
 
-console.log(getUserNames(users));
+// console.log(getUserNames(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
 
 // ============================
 // task_2
 // Получить массив объектов пользователей по цвету глаз(поле eyeColor).
 
-const getUsersWithEyeColor = (users, color) => {
-  // твой код
-  return users.filter((user) => user.eyeColor === color);
-};
+// const getUsersWithEyeColor = (users, color) => {
+//   // твой код
+//   return users.filter((user) => user.eyeColor === color);
+// };
 
-console.log(getUsersWithEyeColor(users, "blue")); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
+// console.log(getUsersWithEyeColor(users, "blue")); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
 
 // =============================
 // task_3
 // Получить массив имен пользователей по полу(поле gender).
 
-const getUsersWithGender = (users, gender) => {
-  // твой код
-  const genderTupe = users
-    .filter((user) => user.gender === gender)
-    .map((user) => user.name);
-  return genderTupe;
-};
+// const getUsersWithGender = (users, gender) => {
+//   // твой код
+//   return users
+//     .filter((user) => user.gender === gender)
+//     .map((user) => user.name);
+// };
 
-console.log(getUsersWithGender(users, "male")); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+// console.log(getUsersWithGender(users, "male")); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+
+// =============================
+// task_4
+// Получить массив только неактивных пользователей (поле isActive).
+
+// const getInactiveUsers = (users) => {
+//   // твой код
+//   return users.filter((user) => !user.isActive);
+// };
+
+// console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
+
+// ==============================
