@@ -91,9 +91,10 @@ const users = [
 
 // ============================
 // task_1
+// Получить массив имен всех пользователей(поле name).
 const getUserNames = users => {
     // твой код
-    let allNames = users.map(user => user.name);
+    const allNames = users.map(user => user.name);
     return allNames
 };
 
@@ -101,6 +102,16 @@ console.log(getUserNames(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
 
 // ============================
+// task_2
+// Получить массив объектов пользователей по цвету глаз(поле eyeColor).
+
+const getUsersWithEyeColor = (users, color) => {
+    // твой код
+    const colorResult = users.filter(user => user.eyeColor === color);
+    return colorResult
+};
+
+console.log(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
 
 
 
